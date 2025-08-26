@@ -1,18 +1,18 @@
-const fs = require("fs/promises");
+// const fs = require("fs/promises");
 const fp = require("fs");
 
 
 //31 sec max will be in order
-(async () => {
+// (async () => {
 
-    console.time("writeMany")
-    const fileHandler = await fs.open("text.txt", "w");
+//     console.time("writeMany")
+//     const fileHandler = await fs.open("text.txt", "w");
 
-    for (let i = 0; i < 1000000; i++) {
-        await fileHandler.write(`${i} `)
-    }
-    console.timeEnd("writeMany");
-})();
+//     for (let i = 0; i < 1000000; i++) {
+//         await fileHandler.write(`${i} `)
+//     }
+//     console.timeEnd("writeMany");
+// })();
 
 
 
